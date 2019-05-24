@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ale.Views.LoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                VerticalOptions="Center"
+                Padding="10"
+                BackgroundColor="Lightgreen">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        BackgroundColor="pink"
+                        HorizontalOptions="Center"
+                        Text=" Nombre: "
+                        FontSize="24"
+                        TextColor="Maroon">
+                    </Label>
+                    <Entry
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        FontAttributes="Italic"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Ingrese su nombre"
+                        VerticalOptions="Center">
+                    </Entry>
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        BackgroundColor="Pink"
+                        HorizontalOptions="Center"
+                        Text=" Apellido: "
+                        FontSize="24"
+                        FontAttributes="None"
+                        TextColor="Maroon">
+                    </Label>
+                    <Entry
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        IsPassword="True"
+                        FontAttributes="Italic"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Ingrese su apellido"
+                        VerticalOptions="Center">
+                        
+                    </Entry>
+                </Grid>
+                <ActivityIndicator>
+
+                </ActivityIndicator>
+                <Button
+                    BackgroundColor="Pink"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    TextColor="Purple"
+                    Text=" Ingresar "
+                    HorizontalOptions="Center">
+                </Button>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
